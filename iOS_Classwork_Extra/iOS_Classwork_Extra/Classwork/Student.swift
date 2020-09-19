@@ -17,6 +17,23 @@ import Foundation
 
 //struct ...
 
+struct Student{
+    var name: String
+    var track: String
+    var gender: String
+    
+    func imageName() -> String{
+        if gender == "boy"{
+            return "boyProfileImage"
+        }
+        else if gender == "girl"{
+            return "girlProfileImage"
+        }
+        else{
+            return "profileimage2"
+        }
+    }
+}
 
 
 
@@ -57,6 +74,10 @@ import Foundation
 //        Student(...
 //    ]
 
-
+var students = [
+    Student(name:"ريم خالد", track: "Ios", gender: "girl"),
+    Student(name:"Sarah", track: "Ios", gender: "girl"),
+     Student(name:"Salem", track: "Ios", gender: "boy"),
+]
 
 
